@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Ants-laboratory/cse-341#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.5.0"
   }
 }
