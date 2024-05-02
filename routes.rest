@@ -1,0 +1,35 @@
+GET http://localhost:3000/contacts/
+
+###Get contact by id
+
+GET http://localhost:3000/contacts/650c5812c06bc031e32200a1 HTTP/1.1
+
+###Create contact
+
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Erick",
+    "lastName": "Cartman",
+    "email": "racoonhero@gmail.com",
+    "favoriteColor": "Red",
+    "birthday": "6/6/6"
+}
+
+###PUT contact
+PUT http://localhost:3000/contacts/650c5812c06bc031e32200a1 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "ILOVE",
+    "lastName": "Money",
+    "email": "IphonesSuck@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "6/6/6"
+
+}
+
+###
+
+DELETE http://localhost:3000/contacts/650c5812c06bc031e32200a1 
