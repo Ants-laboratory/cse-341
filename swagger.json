@@ -113,6 +113,9 @@
       "put": {
         "tags": [],
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
