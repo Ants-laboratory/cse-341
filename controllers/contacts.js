@@ -43,6 +43,12 @@ const createContacts = async (req, res) => {
 
 const updateContacts = async (req, res) => {
     //#swagger.tags=['Contacts]
+    /* #swagger.parameters['body'] = {
+      in: 'body',
+      description: 'Contact information',
+      schema: { $ref: '#/definitions/Contact'}
+  }
+  */
     const contactId = new ObjectId(req.params.id);
     const contact = {
         

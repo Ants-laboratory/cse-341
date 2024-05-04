@@ -113,26 +113,16 @@
             "required": true,
             "type": "string",
           
-          "schema": {
-            "type": "object",
-            "properties": {
-              "firstName": {
-                "example": "any"
-              },
-              "lastName": {
-                "example": "any"
-              },
-              "email": {
-                "example": "any"
-              },
-              "favoriteColor": {
-                "example": "any"
-              },
-              "birthday": {
-                "example": "any"
+            "schemes": ["https"],
+            "definitions": {
+              "Contact": {
+                "firstName": "First",
+                "lastName": "Last",
+                "email": "a@b.com",
+                "favoriteColor": "Red",
+                "birthday": "Now"
               }
             }
-          }
         }
         ],
         "responses": {
