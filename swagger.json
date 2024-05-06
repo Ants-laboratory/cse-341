@@ -103,27 +103,37 @@
       "put": {
         "tags": [],
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
             "in": "path",
             "required": true,
-            "type": "string",
-          
-            "schemes": ["https"],
-            "definitions": {
-              "Contact": {
-                "firstName": "First",
-                "lastName": "Last",
-                "email": "a@b.com",
-                "favoriteColor": "Red",
-                "birthday": "Now"
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "favoriteColor": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                }
               }
             }
-        }
+          }
         ],
         "responses": {
           "204": {
